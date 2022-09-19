@@ -12,8 +12,8 @@ int main(void)
 	lowercase = 'a';
 	while (lowercase <= 'z')
 	{
-		lowercase += lowercase;
 		putchar(lowercase);
+		lowercase = lowercase + 1;
 	}
 
 	putchar('\n'); /* trailing "\n" needed in
