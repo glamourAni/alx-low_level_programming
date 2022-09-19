@@ -7,16 +7,17 @@
  */
 int main(void)
 {
-	int lowercase;
+	char lowercase;
 
-	lowercase = "a";
-	while (lowercase <= "z")
+	lowercase = 'a';
+	while (lowercase <= 'z')
 	{
 		lowercase += lowercase;
 		putchar(lowercase);
 	}
 
-	putchar("\n"); /* trailing "\n" needed in
+	putchar('\n'); /* trailing "\n" needed in
 			*  standard C
 			*/
 	return (0);
+}
