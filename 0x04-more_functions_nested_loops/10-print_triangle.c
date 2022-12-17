@@ -15,11 +15,11 @@ void print_triangle(int size)
 		while (a < size)
 		{
 			for (b = 0; b < (size - 1) - a; b++)
-				putchar(' ');
+				_putchar(' ');
 			for (hash = 0; hash <= a; hash++)
-				putchar('#');
+				_putchar('#');
 			a = a + 1;
-			putchar('\n');
+			_putchar('\n');
 		}
 	}
 }
