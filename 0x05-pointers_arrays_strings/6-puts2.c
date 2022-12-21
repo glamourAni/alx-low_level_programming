@@ -4,7 +4,7 @@
  * puts2 - prints every other character of a string
  * @str: the string
  */
-void puts2(*str)
+void puts2(char *str)
 {
 	while (*str)
 	{
