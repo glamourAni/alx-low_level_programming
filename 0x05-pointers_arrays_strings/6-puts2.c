@@ -1,0 +1,15 @@
+#include "main.h"
+
+/**
+ * puts2 - prints every other character of a string
+ * @str: the string
+ */
+void puts2(*str)
+{
+	while (*str)
+	{
+		_putchar(*str);
+		str += 2;
+	}
+	_putchar('\n');
+}
