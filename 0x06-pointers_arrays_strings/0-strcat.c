@@ -10,18 +10,18 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	int i;
+	char *i = dest;
 
-	/* get byte size for string */
-	int j = sizeof(src);
-
-	for (i = 0; src[i] != '\0'; i++)
+	while (*i != '\0')
 	{
-		dest[i + j] = src[i];
+		i++;
 	}
-
-	/* add null termination */
-	dest[i + j] = '\0';
-
+	while (*src != '\0')
+	{
+		*i = *src;
+		i++;
+		src++;
+	}
+	*p = '\0';
 	return (dest);
 }
