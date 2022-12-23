@@ -15,10 +15,9 @@ void times_table(void)
 		while (n < 10)
 		{
 			times_table = m * n;
-			if (times_table > 9)
+			if ((times_table / 10) > 9)
 			{
 				_putchar((times_table / 10) + '0');
-				_putchar((times_table % 10) + '0');
 			}
 			else
 			{
@@ -27,7 +26,7 @@ void times_table(void)
 			if (n == 9)
 				break;
 			_putchar(',');
-			_putchar('	');
+			_putchar(' ');
 
 			n = n + 1;
 		}
