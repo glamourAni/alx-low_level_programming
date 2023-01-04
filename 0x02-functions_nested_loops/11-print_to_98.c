@@ -26,15 +26,3 @@ void print_to_98(int n)
 	}
 	printf("\n");
 }
-
-int main(void)
-{
-	print_to_98(5);
-	print_to_98(-7);
-	
-	print_to_98(200);
-
-	print_to_98(127);
-
-	return (0);
-}
