@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -9,8 +10,13 @@
  */
 char *_strcpy(char *dest, char *src)
 {
-	char *p = dest;
+	int n = 0;
 
-	while (*(p) = *(src++));
+	while (src[n] != '\0')
+	{
+		dest[n] = src[n];
+		n++;
+	}
+	dest[n] = '\0';
 	return (dest);
 }
