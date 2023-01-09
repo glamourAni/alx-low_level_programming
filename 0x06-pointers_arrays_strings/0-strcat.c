@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * _strcat - appends the src string to the dest string, overwriting the
@@ -10,16 +11,21 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	int i;
-	/* get  byte size for string */
-	int j = sizeof(src);
+	int i, j;
 
-	for (i = 0; src[i] != '\0'; i++)
+	i = 0;/* stores the length of dest*/
+	j = 0;/* stores the length of src*/
+
+	while (dest[i] != '\0')
 	{
-		/* updates string with src bytes */
-		dest[i + j] = src[i];
+		i++;
 	}
-	/* add null termination */
+	while (src[j] != '\0')
+	{
+		dest[i + j] = src[j];
+		j++;
+	}
 	dest[i + j] = '\0';
+
 	return (dest);
 }
