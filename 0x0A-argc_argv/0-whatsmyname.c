@@ -1,9 +1,8 @@
 #include <stdio.h>
-
 /**
  * main - a program that prints its own name
  * @argc: argument count
- * @arcv: argument vector
+ * @argv: argument vector
  * Return: 0
  */
 int main(int argc, char *argv[])
