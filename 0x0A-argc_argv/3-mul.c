@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - multiplies two numbers
@@ -12,8 +13,8 @@ int main(int argc, char *argv[])
 
 	if (argc == 3)
 	{
-		arg1 = argv[1];
-		arg2 = argv[2];
+		arg1 = atoi(argv[1]);
+		arg2 = atoi(argv[2]);
 		mul = arg1 * arg2;
 		printf("%d\n", mul);
 		return (0);
@@ -21,7 +22,7 @@ int main(int argc, char *argv[])
 	else
 	{
 		printf("Error\n");
-		return (1)'
+		return (1);
 	}
 }
 
